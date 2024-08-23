@@ -24,7 +24,7 @@ jobs:
         
       - name: Print secret environment variable
         run: |
-          echo "My secret is: ${{ secrets.TESTING }}" >> $GITHUB_OUTPUT 
+          echo "MY_SECRET=${{ secrets.TESTING }}" >> $GITHUB_OUTPUT
           
       - name: Run pytest
         run: pytest
