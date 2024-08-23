@@ -6,23 +6,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-      - name: pre checkout
+      - name: Pre checkout
         run: |
           pwd
           ls -lh
           
-      - name: checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
         
-      - name: after checkout
+      - name: After checkout
         run: |
           pwd
           ls -lh
           
-      - name: install pytest
+      - name: Install pytest
         run: pip install pytest
         
-      - name: run pytest
+      - name: Print secret environment variable
+        run: |
+          echo "My secret is: ${{ secrets.Testing }}" # Replace MY_SECRET with your secret's name
+          
+      - name: Run pytest
         run: pytest
 
         
