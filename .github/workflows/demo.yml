@@ -24,7 +24,7 @@ jobs:
         
       - name: Print secret environment variable
         run: |
-          echo "My secret is: ${{ secrets.Testing }}" # Replace MY_SECRET with your secret's name
+          echo "My secret is: ${{ secrets.TESTING }}" # Replace MY_SECRET with your secret's name
           
       - name: Run pytest
         run: pytest
