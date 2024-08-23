@@ -1,5 +1,5 @@
 name: CI_PYTHON_TEST
-on: workflow_dispatch
+on: push
 
 jobs:
   CI_PYTHON_TEST:
