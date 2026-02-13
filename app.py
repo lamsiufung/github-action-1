@@ -14,8 +14,6 @@ startup:app in the Gunicorn command.fdsfdsfds
 testing from dev1 
 
 testing from dev2
-
-testing from dev2.1
 """
 
 
